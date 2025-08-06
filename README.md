@@ -33,9 +33,7 @@
 | **☁️ Cloud Service**             | <a href="https://www.aliyun.com/product/ecs" target="_blank"><img src="https://img.shields.io/badge/ECS-00A1D6?style=flat&logo=alibabacloud&logoColor=white" alt="ECS"></a> <a href="https://cloud.oracle.com/en_US/compute" target="_blank"><img src="https://img.shields.io/badge/Oracle%20Cloud-FF3D00?style=flat&logo=oracle&logoColor=white" alt="Oracle Cloud"></a> <a href="https://cloud.google.com/" target="_blank"><img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat&logo=googlecloud&logoColor=white" alt="Google Cloud"></a> |
 
 ## 📈 GitHub Statistics
-<picture>
-  <img src="/github-metrics.svg" alt="Metrics">
-</picture>
+
 
 <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=abelxiaoxing&show_icons=true&theme=vue&include_all_commits=true&count_private=true&rank_icon=github"/>
@@ -46,5 +44,7 @@
   <img width="90%" src="https://github-readme-streak-stats.herokuapp.com/?user=abelxiaoxing&theme=vue" alt="abelxiaoxing" />
 </div>
 <img width="800" src="https://github-readme-activity-graph.vercel.app/graph?username=abelxiaoxing&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20Graph" />
-
+<picture>
+  <img src="/github-metrics.svg" alt="Metrics">
+</picture>
 ---
