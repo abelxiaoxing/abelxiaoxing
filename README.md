@@ -1,10 +1,12 @@
 <div align="center">
 
+  <!-- Readme Typing SVG 动态打字效果 -->
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Welcome+to+my+github!++)](https://git.io/typing-svg)
 
   <!-- profile logo 个人资料徽标 -->
   <div align="center">
-	<a href="https://www.zhaihu.com/people/gu-dao-violet"><img src="https://img.shields.io/badge/Zhihu-知乎-blue" /></a>&emsp;
-  <a href="https://wangtao27.top"><img src="https://img.shields.io/badge/Blog-个人博客-blue" /></a>&emsp;
+	<a href="https://www.zhihu.com/people/luo-tuo-qing-shan-56-17"><img src="https://img.shields.io/badge/Zhihu-知乎-blue" /></a>&emsp;
+  <a href="https://abelxiaoxing.github.io/"><img src="https://img.shields.io/badge/Blog-个人博客-yellow" /></a>&emsp;
 	<a href="https://touzihub.com"><img src="https://img.shields.io/badge/Invest-投资驿站-violet" /></a>&emsp;
    	<a href="https://space.bilibili.com/8303485"><img src="https://img.shields.io/badge/Bilibili-B站-ff69b4" /></a>&emsp;
     <!-- visitor statistics logo 访问量统计徽标 -->
@@ -31,6 +33,7 @@
 | **☁️ Cloud Service**             | <a href="https://www.aliyun.com/product/ecs" target="_blank"><img src="https://img.shields.io/badge/ECS-00A1D6?style=flat&logo=alibabacloud&logoColor=white" alt="ECS"></a> <a href="https://cloud.oracle.com/en_US/compute" target="_blank"><img src="https://img.shields.io/badge/Oracle%20Cloud-FF3D00?style=flat&logo=oracle&logoColor=white" alt="Oracle Cloud"></a> <a href="https://cloud.google.com/" target="_blank"><img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat&logo=googlecloud&logoColor=white" alt="Google Cloud"></a> |
 
 ## 📈 GitHub Statistics
+![Metrics](https://metrics.lecoq.io/abelxiaoxing?template=classic&languages=1&habits=1&followup=1&reactions=1&sponsors=1&people=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&languages=false&languages.limit=8&languages.threshold=0%25&languages.other=false&languages.colors=github&languages.sections=most-used&languages.indepth=false&languages.analysis.timeout=15&languages.analysis.timeout.repositories=7.5&languages.categories=markup%2C%20programming&languages.recent.categories=markup%2C%20programming&languages.recent.load=300&languages.recent.days=14&habits=false&habits.from=200&habits.days=14&habits.facts=true&habits.charts=false&habits.charts.type=classic&habits.trim=false&habits.languages.limit=8&habits.languages.threshold=0%25&followup=false&followup.sections=repositories&followup.indepth=false&followup.archived=true&reactions=false&reactions.limit=200&reactions.limit.issues=100&reactions.limit.discussions=100&reactions.limit.discussions.comments=100&reactions.days=0&reactions.display=absolute&people=false&people.limit=24&people.identicons=false&people.identicons.hide=false&people.size=28&people.types=followers%2C%20following&people.shuffle=false&sponsors=false&sponsors.sections=goal%2C%20list%2C%20about&sponsors.past=false&sponsors.size=24&sponsors.title=Sponsor%20Me!&config.timezone=Asia%2FShanghai)
 
 <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=abelxiaoxing&show_icons=true&theme=vue&include_all_commits=true&count_private=true&rank_icon=github"/>
