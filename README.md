@@ -18,7 +18,7 @@
 - 👋 Hi, I’m Abel.
 - 👀 I’m interested in reading，swimming and writing.
 - 🌱 I’m currently learning Linux kernel.
-- 📫 How to reach me abelxiaoxing@outlook.com
+- 📫 How to reach me abelxiaoxing@qq.com
 
 &nbsp;
 
@@ -48,3 +48,4 @@
   <img src="/github-metrics.svg" alt="Metrics">
 </picture>
 ---
+
