@@ -65,7 +65,7 @@ jobs:
           plugin_people_limit: 24
           plugin_people_size: 28
           plugin_people_types: followers, following
-          plugin_sponsors: yes
-          plugin_sponsors_sections: goal, list, about
-          plugin_sponsors_size: 24
-          plugin_sponsors_title: Sponsor Me!
+          # Disabled because the sponsors plugin requires a token with read:user/read:org
+          # scopes. Without those scopes, lowlighter/metrics logs GraphQL
+          # INSUFFICIENT_SCOPES errors on every run.
+          plugin_sponsors: no
