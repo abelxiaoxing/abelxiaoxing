@@ -36,8 +36,8 @@
 
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=abelxiaoxing&show_icons=true&theme=vue&include_all_commits=true&count_private=true&rank_icon=github"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abelxiaoxing&layout=compact&langs_count=8&theme=vue&text_bold=true"/>
+  <img height="180em" src="https://github-readme-stats-abelxiaoxing-qqcoms-projects.vercel.app/api?username=abelxiaoxing&show_icons=true&theme=vue&include_all_commits=true&count_private=true&rank_icon=github&cache_seconds=86400"/>
+  <img height="180em" src="https://github-readme-stats-abelxiaoxing-qqcoms-projects.vercel.app/api/top-langs/?username=abelxiaoxing&layout=compact&langs_count=8&theme=vue&text_bold=true&cache_seconds=86400"/>
 </div>
 
 <div align="center">
