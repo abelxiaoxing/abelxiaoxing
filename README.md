@@ -81,12 +81,12 @@
 
 ---
 
-## 🏆 GitHub Trophies
+## 🏆 Achievement Radar
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2BD6,50:7C3AED,100:00E5FF&height=2&section=header" width="100%" />
 
 <div align="center">
-  <img width="100%" src="https://github-profile-trophy.vercel.app/?username=abelxiaoxing&theme=matrix&no-frame=true&no-bg=true&row=1&column=7" alt="GitHub Trophy" />
+  <img width="100%" src="./assets/achievement-radar.svg" alt="Achievement Radar" />
 </div>
 
 ---

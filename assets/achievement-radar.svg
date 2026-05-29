@@ -1,0 +1,31 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020617"/><stop offset="0.52" stop-color="#061827"/><stop offset="1" stop-color="#160B2F"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00E5FF"/><stop offset="0.5" stop-color="#7C3AED"/><stop offset="1" stop-color="#FF2BD6"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 180) rotate(90) scale(160 460)">
+      <stop stop-color="#00E5FF" stop-opacity="0.22"/><stop offset="0.55" stop-color="#7C3AED" stop-opacity="0.1"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" stroke="#22D3EE" stroke-width="0.55" opacity="0.11"/></pattern>
+    <style>
+      .title{font:800 32px 'Segoe UI',Ubuntu,sans-serif;letter-spacing:3px;fill:#E6FBFF}.sub{font:600 13px 'Fira Code',Consolas,monospace;fill:#7DD3FC}.h{font:800 17px 'Segoe UI',Ubuntu,sans-serif;fill:#E6FBFF}.b{font:600 12px 'Fira Code',Consolas,monospace;fill:#BCEFFF}.tiny{font:500 11px 'Fira Code',Consolas,monospace;fill:#7DD3FC}.card{fill:rgba(8,17,31,.78);stroke:url(#neon);stroke-width:1.2}.pulse{animation:pulse 2.6s ease-in-out infinite;transform-origin:center}.dash{stroke-dasharray:7 9;animation:dash 16s linear infinite}@keyframes pulse{50%{opacity:.5;transform:scale(.94)}}@keyframes dash{to{stroke-dashoffset:-220}}
+    </style>
+  </defs>
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/><rect width="1200" height="360" rx="28" fill="url(#grid)"/><rect width="1200" height="360" rx="28" fill="url(#halo)"/>
+  <rect x="22" y="22" width="1156" height="316" rx="22" stroke="url(#neon)" stroke-width="2" opacity=".72"/>
+  <text x="70" y="72" class="title">ACHIEVEMENT RADAR</text><text x="70" y="100" class="sub">local fallback panel · zero external trophy dependency · always renderable</text>
+  <path class="dash" d="M86 178C190 105 303 105 404 178S614 251 712 178S924 105 1114 178" stroke="url(#neon)" stroke-width="2" opacity=".62" filter="url(#glow)"/>
+  <g transform="translate(70 138)">
+    <rect class="card" width="155" height="128" rx="18"/><circle class="pulse" cx="78" cy="42" r="17" fill="#00E5FF" filter="url(#glow)"/><text x="78" y="84" text-anchor="middle" class="h">AI Builder</text><text x="78" y="108" text-anchor="middle" class="b">Agent / RAG</text>
+    <rect class="card" x="180" width="155" height="128" rx="18"/><circle class="pulse" cx="258" cy="42" r="17" fill="#7C3AED" filter="url(#glow)"/><text x="258" y="84" text-anchor="middle" class="h">Vision Core</text><text x="258" y="108" text-anchor="middle" class="b">CV / TS</text>
+    <rect class="card" x="360" width="155" height="128" rx="18"/><circle class="pulse" cx="438" cy="42" r="17" fill="#FF2BD6" filter="url(#glow)"/><text x="438" y="84" text-anchor="middle" class="h">3D Stack</text><text x="438" y="108" text-anchor="middle" class="b">Geometry</text>
+    <rect class="card" x="540" width="155" height="128" rx="18"/><circle class="pulse" cx="618" cy="42" r="17" fill="#00E5FF" filter="url(#glow)"/><text x="618" y="84" text-anchor="middle" class="h">GPU Runtime</text><text x="618" y="108" text-anchor="middle" class="b">CUDA / TRT</text>
+    <rect class="card" x="720" width="155" height="128" rx="18"/><circle class="pulse" cx="798" cy="42" r="17" fill="#7C3AED" filter="url(#glow)"/><text x="798" y="84" text-anchor="middle" class="h">Automation</text><text x="798" y="108" text-anchor="middle" class="b">Linux / CI</text>
+    <rect class="card" x="900" width="155" height="128" rx="18"/><circle class="pulse" cx="978" cy="42" r="17" fill="#FF2BD6" filter="url(#glow)"/><text x="978" y="84" text-anchor="middle" class="h">Ship Mode</text><text x="978" y="108" text-anchor="middle" class="b">Product AI</text>
+  </g>
+  <text x="70" y="312" class="tiny">achievements.render(local=True, dependency_free=True, cyberpunk=True)</text><text x="1130" y="312" text-anchor="end" class="tiny">RADAR: ONLINE</text>
+</svg>
