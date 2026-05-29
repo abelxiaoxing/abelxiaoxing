@@ -1,0 +1,39 @@
+<svg width="1200" height="620" viewBox="0 0 1200 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020617"/><stop offset=".55" stop-color="#071827"/><stop offset="1" stop-color="#150925"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00E5FF"/><stop offset=".52" stop-color="#7C3AED"/><stop offset="1" stop-color="#FF2BD6"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" stroke="#22D3EE" stroke-width=".55" opacity=".11"/></pattern>
+    <style>
+      .title{font:800 34px 'Segoe UI',Ubuntu,sans-serif;letter-spacing:3px;fill:#E6FBFF}.sub{font:600 15px 'Fira Code',Consolas,monospace;fill:#7DD3FC}.head{font:800 18px 'Segoe UI',Ubuntu,sans-serif;letter-spacing:1px;fill:#E6FBFF}.body{font:500 14px 'Fira Code',Consolas,monospace;fill:#BCEFFF}.tiny{font:500 11px 'Fira Code',Consolas,monospace;fill:#7DD3FC}.card{fill:rgba(8,17,31,.78);stroke:#22D3EE;stroke-width:1;}.card2{fill:rgba(8,17,31,.72);stroke:url(#line);stroke-width:1.2}.bar{filter:url(#glow)}.pulse{animation:pulse 2.8s ease-in-out infinite;transform-origin:center}@keyframes pulse{50%{opacity:.45;transform:scale(.98)}}
+    </style>
+  </defs>
+  <rect width="1200" height="620" rx="30" fill="url(#bg)"/><rect width="1200" height="620" rx="30" fill="url(#grid)"/>
+  <rect x="22" y="22" width="1156" height="576" rx="24" stroke="url(#line)" stroke-width="2" opacity=".72"/>
+  <text x="70" y="78" class="title">TECH ARSENAL MATRIX</text><text x="70" y="108" class="sub">Capability map · model-to-runtime · full-stack automation</text>
+  <line x1="70" y1="130" x2="1130" y2="130" stroke="url(#line)" stroke-width="2" opacity=".72"/>
+
+  <g transform="translate(70 170)">
+    <rect class="card2" width="330" height="170" rx="18"/><text x="26" y="42" class="head">🤖 Agent / LLM</text><text x="26" y="72" class="body">RAG · Embedding · ReAct</text><text x="26" y="98" class="body">Function Calling · MCP / Skills</text><text x="26" y="124" class="body">Prompt Pipeline · Guardrails</text><rect x="26" y="144" width="250" height="6" rx="3" fill="#102A3A"/><rect class="bar" x="26" y="144" width="218" height="6" rx="3" fill="#00E5FF"/>
+  </g>
+  <g transform="translate(435 170)">
+    <rect class="card2" width="330" height="170" rx="18"/><text x="26" y="42" class="head">👁 Vision / Time-series</text><text x="26" y="72" class="body">PyTorch · timm · OpenCV</text><text x="26" y="98" class="body">Classification · Detection · QA</text><text x="26" y="124" class="body">Evaluation / Training Pipelines</text><rect x="26" y="144" width="250" height="6" rx="3" fill="#102A3A"/><rect class="bar" x="26" y="144" width="228" height="6" rx="3" fill="#7C3AED"/>
+  </g>
+  <g transform="translate(800 170)">
+    <rect class="card2" width="330" height="170" rx="18"/><text x="26" y="42" class="head">🧊 3D / Geometry</text><text x="26" y="72" class="body">ASTRA Toolbox · Open3D</text><text x="26" y="98" class="body">GPU Reconstruction · Calibration</text><text x="26" y="124" class="body">Point Cloud Processing</text><rect x="26" y="144" width="250" height="6" rx="3" fill="#102A3A"/><rect class="bar" x="26" y="144" width="204" height="6" rx="3" fill="#FF2BD6"/>
+  </g>
+
+  <g transform="translate(70 370)">
+    <rect class="card" width="250" height="120" rx="16"/><text x="22" y="38" class="head">🚀 Deployment</text><text x="22" y="68" class="body">ONNX · TensorRT · CUDA</text><text x="22" y="94" class="body">Linux · Docker · Jetson</text>
+    <rect class="card" x="285" width="250" height="120" rx="16"/><text x="307" y="38" class="head">🛠 Tooling</text><text x="307" y="68" class="body">FastAPI · PySide6 · Vue</text><text x="307" y="94" class="body">SSE logs · automation</text>
+    <rect class="card" x="570" width="250" height="120" rx="16"/><text x="592" y="38" class="head">⚙ Systems</text><text x="592" y="68" class="body">C/C++ · Rust · Bash</text><text x="592" y="94" class="body">Performance · packaging</text>
+    <rect class="card" x="855" width="205" height="120" rx="16"/><text x="877" y="38" class="head">📡 Signal</text><text x="877" y="68" class="body">Reliable</text><text x="877" y="94" class="body">Reproducible</text>
+  </g>
+
+  <g opacity=".92"><circle class="pulse" cx="1038" cy="90" r="5" fill="#00E5FF" filter="url(#glow)"/><circle class="pulse" cx="1082" cy="90" r="5" fill="#FF2BD6" filter="url(#glow)"/><circle class="pulse" cx="1126" cy="90" r="5" fill="#7C3AED" filter="url(#glow)"/></g>
+  <text x="70" y="548" class="tiny">skills.map() =&gt; agentic_ai + vision_intelligence + gpu_runtime + product_engineering</text><text x="1130" y="548" text-anchor="end" class="tiny">MATRIX LOCKED</text>
+</svg>
