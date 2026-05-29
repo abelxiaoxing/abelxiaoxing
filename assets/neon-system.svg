@@ -1,0 +1,96 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#050816"/>
+      <stop offset="0.45" stop-color="#08111F"/>
+      <stop offset="1" stop-color="#120A2A"/>
+    </linearGradient>
+    <linearGradient id="cyanPurple" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00E5FF"/>
+      <stop offset="0.5" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#FF2BD6"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 180) rotate(90) scale(155 350)">
+      <stop offset="0" stop-color="#00E5FF" stop-opacity="0.35"/>
+      <stop offset="0.45" stop-color="#7C3AED" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0  0 0 0 0 0.9  0 0 0 0 1  0 0 0 0.75 0" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1D9BF0" stroke-width="0.6" opacity="0.18"/>
+    </pattern>
+    <style>
+      .title { font: 800 42px 'Segoe UI', Ubuntu, sans-serif; letter-spacing: 2px; fill: #E6FBFF; }
+      .subtitle { font: 500 18px 'Segoe UI', Ubuntu, sans-serif; letter-spacing: 1px; fill: #8BE9FD; }
+      .small { font: 600 14px 'Fira Code', Consolas, monospace; fill: #C7F9FF; }
+      .tiny { font: 500 12px 'Fira Code', Consolas, monospace; fill: #7DD3FC; }
+      .chip { fill: rgba(8, 17, 31, 0.78); stroke: url(#cyanPurple); stroke-width: 1.2; }
+      .pulse { animation: pulse 2.6s ease-in-out infinite; transform-origin: center; }
+      .float { animation: float 5s ease-in-out infinite; }
+      .dash { stroke-dasharray: 8 10; animation: dash 18s linear infinite; }
+      @keyframes pulse { 0%,100%{ opacity:.55; transform:scale(1);} 50%{ opacity:1; transform:scale(1.08);} }
+      @keyframes float { 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-8px);} }
+      @keyframes dash { to { stroke-dashoffset: -260; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="28" fill="url(#grid)"/>
+  <rect width="1200" height="360" rx="28" fill="url(#core)"/>
+  <rect x="18" y="18" width="1164" height="324" rx="22" stroke="url(#cyanPurple)" stroke-width="2" opacity="0.75"/>
+  <rect x="34" y="34" width="1132" height="292" rx="18" stroke="#00E5FF" stroke-width="1" opacity="0.22"/>
+
+  <path class="dash" d="M165 178 C270 70, 420 72, 510 160 S780 290, 930 164 S1080 96, 1130 172" stroke="url(#cyanPurple)" stroke-width="2" opacity="0.65" filter="url(#glow)"/>
+  <path class="dash" d="M92 252 C230 220, 335 278, 455 232 S705 92, 828 132 S1010 285, 1110 230" stroke="#00E5FF" stroke-width="1.4" opacity="0.42"/>
+
+  <g filter="url(#glow)">
+    <circle class="pulse" cx="600" cy="180" r="64" fill="#00E5FF" opacity="0.07"/>
+    <circle cx="600" cy="180" r="44" fill="#08111F" stroke="url(#cyanPurple)" stroke-width="2.5"/>
+    <path d="M575 181h50M600 156v50M584 165l32 32M616 165l-32 32" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+    <circle cx="600" cy="180" r="8" fill="#FF2BD6"/>
+  </g>
+
+  <text x="600" y="78" text-anchor="middle" class="title">AI SYSTEMS ENGINEERING</text>
+  <text x="600" y="108" text-anchor="middle" class="subtitle">Agentic Workflows · Vision Intelligence · 3D Reconstruction · Edge Deployment</text>
+
+  <g class="float">
+    <rect class="chip" x="72" y="122" width="228" height="74" rx="16"/>
+    <text x="94" y="152" class="small">🤖 AGENT RUNTIME</text>
+    <text x="94" y="177" class="tiny">RAG · MCP · Tools · Guardrails</text>
+  </g>
+
+  <g class="float" style="animation-delay:.4s">
+    <rect class="chip" x="346" y="214" width="224" height="74" rx="16"/>
+    <text x="368" y="244" class="small">👁 VISION CORE</text>
+    <text x="368" y="269" class="tiny">PyTorch · OpenCV · timm</text>
+  </g>
+
+  <g class="float" style="animation-delay:.8s">
+    <rect class="chip" x="628" y="214" width="224" height="74" rx="16"/>
+    <text x="650" y="244" class="small">🧊 3D / GEOMETRY</text>
+    <text x="650" y="269" class="tiny">ASTRA · Open3D · CUDA</text>
+  </g>
+
+  <g class="float" style="animation-delay:1.2s">
+    <rect class="chip" x="900" y="122" width="228" height="74" rx="16"/>
+    <text x="922" y="152" class="small">🚀 EDGE DEPLOY</text>
+    <text x="922" y="177" class="tiny">ONNX · TensorRT · Linux</text>
+  </g>
+
+  <g opacity="0.9">
+    <circle cx="158" cy="224" r="4" fill="#00E5FF" filter="url(#glow)"/>
+    <circle cx="1034" cy="252" r="4" fill="#FF2BD6" filter="url(#glow)"/>
+    <circle cx="286" cy="92" r="3" fill="#7C3AED" filter="url(#glow)"/>
+    <circle cx="914" cy="86" r="3" fill="#00E5FF" filter="url(#glow)"/>
+  </g>
+
+  <text x="62" y="314" class="tiny">~/profile $ build --reliable --reproducible --performance-first</text>
+  <text x="1138" y="314" text-anchor="end" class="tiny">STATUS: ONLINE</text>
+</svg>
