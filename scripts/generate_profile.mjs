@@ -196,7 +196,7 @@ function statusPill(d, t, { x, cy }) {
 
 /** Isometric wireframe cube + agent-node graph, 15–25% opacity, right side. */
 function heroMotif(d, t) {
-  const c = { x: 1005, y: 148, R: 60 };
+  const c = { x: 742, y: 146, R: 50 };
   const k = (Math.sqrt(3) / 2) * c.R;
   const v = [
     { x: c.x, y: c.y - c.R }, // v0 top
@@ -214,11 +214,11 @@ function heroMotif(d, t) {
   ].join(' ');
 
   const nodes = [
-    { x: 766, y: 96, r: 3 },
-    { x: 842, y: 66, r: 3 },
-    { x: 902, y: 120, r: 3.5, accent: true },
-    { x: 782, y: 178, r: 3 },
-    { x: 862, y: 218, r: 3 },
+    { x: 566, y: 96, r: 3 },
+    { x: 628, y: 66, r: 3 },
+    { x: 684, y: 118, r: 3.5, accent: true },
+    { x: 582, y: 178, r: 3 },
+    { x: 650, y: 214, r: 3 },
   ];
   const edges = [
     [0, 1], [1, 2], [0, 3], [3, 4],
@@ -232,7 +232,7 @@ function heroMotif(d, t) {
     }));
   }
   parts.push(line({
-    x1: nodes[2].x, y1: nodes[2].y, x2: v[5].x, y2: v[5].y,
+    x1: nodes[2].x, y1: nodes[2].y, x2: v[0].x, y2: v[0].y,
     stroke: t.motif, strokeWidth: 1, opacity: 0.16, dash: '2 5',
   }));
   for (const nd of nodes) {
@@ -248,28 +248,28 @@ function heroMotif(d, t) {
 function renderHero(d, t) {
   const parts = [];
 
-  const pill = statusPill(d, t, { x: 32, cy: 64 });
+  const pill = statusPill(d, t, { x: 28, cy: 62 });
   parts.push(pill.svg);
 
   const nameW = textWidth(d.name, { size: 46, weight: 650 });
-  parts.push(text({ x: 32, y: 138, str: d.name, size: 46, weight: 650, fill: t.text1 }));
+  parts.push(text({ x: 28, y: 140, str: d.name, size: 46, weight: 650, fill: t.text1 }));
   parts.push(text({
-    x: 32 + nameW + 18, y: 138, str: `@${d.handle}`,
+    x: 28 + nameW + 16, y: 140, str: `@${d.handle}`,
     size: 15, mono: true, fill: t.text3,
   }));
 
-  const tag = fitText(d.tagline, 660, { size: 16 });
+  const tag = fitText(d.tagline, 514, { size: 17 });
   if (tag.truncated) warn(`hero tagline truncated: "${tag.text}"`);
-  parts.push(text({ x: 32, y: 174, str: tag.text, size: 16, fill: t.text2 }));
+  parts.push(text({ x: 28, y: 174, str: tag.text, size: 17, fill: t.text2 }));
 
   // Domain chips
-  let cx = 32;
+  let cx = 28;
   for (const label of d.chips) {
-    const tw = textWidth(label, { size: 11, mono: true, letterSpacing: 1 });
-    const w = tw + 30;
-    parts.push(rect({ x: cx, y: 200, w, h: 26, rx: 13, stroke: t.border, strokeWidth: 1 }));
+    const tw = textWidth(label, { size: 11.5, mono: true, letterSpacing: 1 });
+    const w = tw + 28;
+    parts.push(rect({ x: cx, y: 198, w, h: 26, rx: 13, stroke: t.border, strokeWidth: 1 }));
     parts.push(text({
-      x: cx + w / 2, y: 217.5, str: label, size: 11, mono: true, ls: 1,
+      x: cx + w / 2, y: 215.5, str: label, size: 11.5, mono: true, ls: 1,
       fill: t.text2, anchor: 'middle',
     }));
     cx += w + 10;
@@ -277,76 +277,69 @@ function renderHero(d, t) {
 
   parts.push(heroMotif(d, t));
 
-  return svgDocument({ w: 1200, h: 280, title: `${d.name} — AI systems engineer`, body: parts.join('\n') });
+  return svgDocument({ w: 846, h: 280, title: `${d.name} — AI systems engineer`, body: parts.join('\n') });
 }
 
 function renderFocus(d, t) {
-  const W = 1200, H = 210, GAP = 12;
-  const cw = (W - 2 * GAP) / 3; // 392
+  const W = 846, H = 200, GAP = 10;
+  const cw = (W - 2 * GAP) / 3; // ≈275
   const parts = [];
   d.focus.forEach((card, i) => {
     const x = i * (cw + GAP);
-    parts.push(rect({ x, y: 0, w: cw, h: H, rx: 16, fill: t.card, stroke: t.border, strokeWidth: 1 }));
+    parts.push(rect({ x, y: 0, w: cw, h: H, rx: 14, fill: t.card, stroke: t.border, strokeWidth: 1 }));
 
     const idxW = textWidth(card.index, { size: 13, mono: true });
-    parts.push(text({ x: x + 26, y: 64, str: card.index, size: 13, mono: true, fill: t.accent }));
-    parts.push(text({ x: x + 26 + idxW + 10, y: 64, str: '/', size: 13, mono: true, fill: t.text3 }));
-    const title = fitText(card.title, cw - 52 - idxW - 26, { size: 17.5, weight: 600 });
+    parts.push(text({ x: x + 22, y: 60, str: card.index, size: 13, mono: true, fill: t.accent }));
+    parts.push(text({ x: x + 22 + idxW + 8, y: 60, str: '/', size: 13, mono: true, fill: t.text3 }));
+    const title = fitText(card.title, cw - 44 - idxW - 20, { size: 18, weight: 600 });
     if (title.truncated) warn(`focus title truncated: "${title.text}"`);
     parts.push(text({
-      x: x + 26 + idxW + 22, y: 64, str: title.text, size: 17.5, weight: 600, fill: t.text1,
+      x: x + 22 + idxW + 18, y: 60, str: title.text, size: 18, weight: 600, fill: t.text1,
     }));
 
     card.lines.forEach((line0, j) => {
-      const fitted = fitText(line0, cw - 52, { size: 12.5, mono: true });
+      const fitted = fitText(line0, cw - 44, { size: 12.5, mono: true });
       if (fitted.truncated) warn(`focus line truncated: "${fitted.text}"`);
-      parts.push(text({ x: x + 26, y: 102 + j * 26, str: fitted.text, size: 12.5, mono: true, fill: t.text2 }));
+      parts.push(text({ x: x + 22, y: 98 + j * 26, str: fitted.text, size: 12.5, mono: true, fill: t.text2 }));
     });
 
     parts.push(text({
-      x: x + cw - 26, y: 186, str: card.index, size: 92, weight: 700,
-      fill: t.text1, opacity: 0.045, anchor: 'end',
+      x: x + cw - 22, y: 184, str: card.index, size: 64, weight: 700,
+      fill: t.text1, opacity: 0.05, anchor: 'end',
     }));
   });
   return svgDocument({ w: W, h: H, title: 'Core focus areas', body: parts.join('\n') });
 }
 
 function renderTelemetry(d, t) {
-  const W = 1200, H = 190;
+  const W = 846, H = 190;
   const parts = [
     rect({ x: 0, y: 0, w: W, h: H, rx: 16, fill: t.card, stroke: t.border, strokeWidth: 1 }),
   ];
 
-  const since = (() => {
-    const dt = new Date(d.memberSince);
-    return `SINCE ${MONTHS[dt.getUTCMonth()]} ${dt.getUTCFullYear()}`;
-  })();
+  const label = (x, str) =>
+    text({ x, y: 70, str: fitText(str, 240, { size: 10.5, mono: true, letterSpacing: 1.2 }).text, size: 10.5, mono: true, ls: 1.2, fill: t.text3 });
+  const value = (x, str, size = 32) =>
+    text({ x, y: 112, str, size, weight: 650, fill: t.text1 });
+  const sub = (x, str, w = 160) =>
+    text({ x, y: 134, str: fitText(str, w, { size: 9.5, mono: true, letterSpacing: 0.6 }).text, size: 9.5, mono: true, ls: 0.6, fill: t.text3 });
+  const sep = (x) => line({ x1: x, y1: 54, x2: x, y2: 136, stroke: t.border });
 
-  // col 1 — repos
-  parts.push(text({ x: 36, y: 72, str: 'PUBLIC REPOS', size: 10.5, mono: true, ls: 1.2, fill: t.text3 }));
-  parts.push(text({ x: 36, y: 112, str: fmtInt(d.publicRepos), size: 34, weight: 650, fill: t.text1 }));
-  parts.push(text({ x: 36, y: 134, str: since, size: 10, mono: true, ls: 0.6, fill: t.text3 }));
+  // col 1 — repos (+ star count as secondary signal)
+  parts.push(label(28, 'PUBLIC REPOS'));
+  parts.push(value(28, fmtInt(d.publicRepos)));
+  parts.push(sub(28, `SINCE 2019 · ★${d.totalStars}`, 124));
 
-  parts.push(line({ x1: 206, y1: 54, x2: 206, y2: 136, stroke: t.border }));
   // col 2 — contributions (GitHub GraphQL contributionCalendar)
-  parts.push(text({ x: 232, y: 72, str: 'CONTRIBUTIONS', size: 10.5, mono: true, ls: 1.2, fill: t.text3 }));
-  parts.push(text({ x: 232, y: 112, str: fmtInt(d.contributionsLastYear), size: 34, weight: 650, fill: t.text1 }));
-  parts.push(text({ x: 232, y: 134, str: `LAST 12 MO · ${d.contribRepos} REPOS`, size: 10, mono: true, ls: 0.6, fill: t.text3 }));
+  parts.push(sep(164));
+  parts.push(label(190, 'CONTRIBUTIONS'));
+  parts.push(value(190, fmtInt(d.contributionsLastYear)));
+  parts.push(sub(190, `12 MO · ${d.contribRepos} REPOS`, 132));
 
-  parts.push(line({ x1: 398, y1: 54, x2: 398, y2: 136, stroke: t.border }));
-  // col 3 — stars
-  parts.push(text({ x: 424, y: 72, str: 'TOTAL STARS', size: 10.5, mono: true, ls: 1.2, fill: t.text3 }));
-  parts.push(text({ x: 424, y: 112, str: fmtInt(d.totalStars), size: 34, weight: 650, fill: t.text1 }));
-  parts.push(text({ x: 424, y: 134, str: 'ALL PUBLIC REPOS', size: 10, mono: true, ls: 0.6, fill: t.text3 }));
-
-  parts.push(line({ x1: 564, y1: 54, x2: 564, y2: 136, stroke: t.border }));
-  // col 4 — language mix
-  const bx = 596, bw = 300;
-  parts.push(text({
-    x: bx, y: 72,
-    str: `LANGUAGES · ${d.reposCounted} NON-FORK REPOS`,
-    size: 10.5, mono: true, ls: 1.2, fill: t.text3,
-  }));
+  // col 3 — language mix
+  parts.push(sep(322));
+  const bx = 348, bw = 250;
+  parts.push(label(bx, `LANGUAGES · ${d.reposCounted} NON-FORK REPOS`));
   const counts = d.languages.map((l) => l.count);
   const other = Math.max(0, d.reposCounted - counts.reduce((a, b) => a + b, 0));
   const entries = [
@@ -357,120 +350,122 @@ function renderTelemetry(d, t) {
   entries.forEach((e, i) => { e.pct = pcts[i]; });
 
   const clipId = `langbar-${t.name}`;
-  parts.push(`<defs><clipPath id="${clipId}"><rect x="${bx}" y="92" width="${bw}" height="8" rx="4" /></clipPath></defs>`);
-  parts.push(rect({ x: bx, y: 92, w: bw, h: 8, rx: 4, fill: t.border, opacity: 0.5 }));
+  parts.push(`<defs><clipPath id="${clipId}"><rect x="${bx}" y="90" width="${bw}" height="8" rx="4" /></clipPath></defs>`);
+  parts.push(rect({ x: bx, y: 90, w: bw, h: 8, rx: 4, fill: t.border, opacity: 0.5 }));
   let offset = 0;
   entries.forEach((e, i) => {
     const w = i === entries.length - 1 ? bw - offset : (e.pct / 100) * bw;
-    parts.push(rect({ x: bx + offset, y: 92, w, h: 8, fill: e.color, clip: clipId }));
+    parts.push(rect({ x: bx + offset, y: 90, w, h: 8, fill: e.color, clip: clipId }));
     offset += w;
   });
   entries.forEach((e, i) => {
-    const col = i % 3, row = Math.floor(i / 3);
-    const lx = bx + col * 104, ly = 124 + row * 24;
+    const col = i % 2, row = Math.floor(i / 2);
+    const lx = bx + col * 130, ly = 120 + row * 20;
     parts.push(circle({ cx: lx + 3, cy: ly - 3.5, r: 3.5, fill: e.color }));
     parts.push(text({
       x: lx + 14, y: ly,
-      str: fitText(`${e.name.toUpperCase()} ${e.pct}%`, 86, { size: 10, mono: true }).text,
+      str: fitText(`${e.name.toUpperCase()} ${e.pct}%`, 112, { size: 10, mono: true }).text,
       size: 10, mono: true, fill: t.text2,
     }));
   });
 
-  parts.push(line({ x1: 924, y1: 54, x2: 924, y2: 136, stroke: t.border }));
-  // col 5 — package momentum
-  parts.push(text({ x: 956, y: 72, str: 'PACKAGE MOMENTUM', size: 10.5, mono: true, ls: 1.2, fill: t.text3 }));
+  // col 4 — package momentum
+  parts.push(sep(622));
+  parts.push(label(648, 'PACKAGE MOMENTUM'));
   const dl = fmtInt(d.npm.downloads);
-  const dlW = textWidth(dl, { size: 24, weight: 650 });
-  parts.push(text({ x: 956, y: 112, str: dl, size: 24, weight: 650, fill: t.text1 }));
-  parts.push(text({ x: 956 + dlW + 12, y: 112, str: 'NPM DL · 30D', size: 10, mono: true, ls: 0.6, fill: t.text3 }));
-  const pkgLine = d.npm.version ? `${d.npm.package} · v${d.npm.version}` : d.npm.package;
+  const dlW = textWidth(dl, { size: 22, weight: 650 });
+  parts.push(text({ x: 648, y: 112, str: dl, size: 22, weight: 650, fill: t.text1 }));
+  parts.push(text({ x: 648 + dlW + 10, y: 112, str: 'NPM DL / MO', size: 9, mono: true, fill: t.text3 }));
   parts.push(text({
-    x: 956, y: 134,
-    str: fitText(pkgLine, 208, { size: 10.5, mono: true }).text,
-    size: 10.5, mono: true, fill: t.text3,
+    x: 648, y: 134,
+    str: fitText(d.npm.package, 170, { size: 9.5, mono: true }).text,
+    size: 9.5, mono: true, fill: t.text3,
   }));
   const st = d.syncedAt;
+  const syncedLine = d.npm.version
+    ? `SYNCED ${st.getUTCFullYear()}-${pad2(st.getUTCMonth() + 1)}-${pad2(st.getUTCDate())} · v${d.npm.version}`
+    : `SYNCED ${st.getUTCFullYear()}-${pad2(st.getUTCMonth() + 1)}-${pad2(st.getUTCDate())}`;
   parts.push(text({
-    x: 956, y: 154,
-    str: `SYNCED ${st.getUTCFullYear()}-${pad2(st.getUTCMonth() + 1)}-${pad2(st.getUTCDate())} ${pad2(st.getUTCHours())}:${pad2(st.getUTCMinutes())} UTC`,
-    size: 10, mono: true, ls: 0.8, fill: t.text3,
+    x: 648, y: 154,
+    str: fitText(syncedLine, 170, { size: 9.5, mono: true }).text,
+    size: 9.5, mono: true, fill: t.text3,
   }));
 
-  return svgDocument({ w: W, h: H, title: 'GitHub telemetry — repos, contributions, stars, languages, npm downloads', body: parts.join('\n') });
+  return svgDocument({ w: W, h: H, title: 'GitHub telemetry — repos, contributions, languages, npm downloads', body: parts.join('\n') });
 }
 
 function renderStack(d, t) {
-  const W = 1200;
-  const PAD = 30, GAP = 12, CHIP_H = 26;
+  const W = 846;
+  const PAD = 28, GAP = 12, CHIP_H = 26;
   const rows = d.stack.length;
-  const H = 2 * PAD + rows * CHIP_H + (rows - 1) * GAP; // 3 rows -> 162, 4 rows -> 200
+  const H = 2 * PAD + rows * CHIP_H + (rows - 1) * GAP; // 4 rows -> 196
   const parts = [
     rect({ x: 0, y: 0, w: W, h: H, rx: 16, fill: t.card, stroke: t.border, strokeWidth: 1 }),
   ];
   d.stack.forEach((grp, gi) => {
     const cy = PAD + CHIP_H / 2 + gi * (CHIP_H + GAP);
     parts.push(text({
-      x: 32, y: cy + 3.5, str: grp.group, size: 10.5, mono: true, ls: 1.2, fill: t.text3,
+      x: 28, y: cy + 3.5, str: grp.group, size: 10.5, mono: true, ls: 1.2, fill: t.text3,
     }));
-    let cx = 206;
+    let cx = 190;
     for (const item of grp.items) {
-      const tw = textWidth(item, { size: 12, mono: true });
-      const w = tw + 26;
+      const tw = textWidth(item, { size: 11, mono: true });
+      const w = tw + 20;
       if (cx + w > W - 28) { warn(`stack row "${grp.group}" overflow at "${item}"`); break; }
       parts.push(rect({ x: cx, y: cy - 13, w, h: CHIP_H, rx: CHIP_H / 2, stroke: t.border, strokeWidth: 1 }));
       parts.push(text({
-        x: cx + w / 2, y: cy + 4, str: item, size: 12, mono: true, fill: t.text2, anchor: 'middle',
+        x: cx + w / 2, y: cy + 4, str: item, size: 11, mono: true, fill: t.text2, anchor: 'middle',
       }));
-      cx += w + 8;
+      cx += w + 6;
     }
   });
   return svgDocument({ w: W, h: H, title: 'Technology stack', body: parts.join('\n') });
 }
 
 function renderCard(d, t, proj) {
-  const W = 580, H = 180;
-  const pad = 28;
+  const W = 415, H = 164;
+  const pad = 22;
   const parts = [
-    rect({ x: 0, y: 0, w: W, h: H, rx: 16, fill: t.card, stroke: t.border, strokeWidth: 1 }),
+    rect({ x: 0, y: 0, w: W, h: H, rx: 14, fill: t.card, stroke: t.border, strokeWidth: 1 }),
   ];
 
   parts.push(text({
-    x: pad, y: 46,
-    str: fitText(`${d.handle} / ${proj.repo}`, W - pad * 2 - 40, { size: 11.5, mono: true, ls: 0.5 }).text,
-    size: 11.5, mono: true, ls: 0.5, fill: t.text3,
+    x: pad, y: 44,
+    str: fitText(`${d.handle} / ${proj.repo}`, W - pad * 2 - 36, { size: 11, mono: true, ls: 0.5 }).text,
+    size: 11, mono: true, ls: 0.5, fill: t.text3,
   }));
 
   // minimal arrow ↗ (drawn as path — unicode arrows risk emoji fallback)
   parts.push(svgPath({
-    d: `M ${W - 46} 52 L ${W - 28} 34 M ${W - 28} 34 L ${W - 38} 34 M ${W - 28} 34 L ${W - 28} 44`,
+    d: `M ${W - 42} 48 L ${W - 26} 32 M ${W - 26} 32 L ${W - 35} 32 M ${W - 26} 32 L ${W - 26} 41`,
     stroke: t.text3, strokeWidth: 1.6,
   }));
 
-  const title = fitText(proj.title, W - pad * 2 - 36, { size: 21, weight: 650 });
+  const title = fitText(proj.title, W - pad * 2 - 32, { size: 20, weight: 650 });
   if (title.truncated) warn(`card title truncated: "${title.text}"`);
-  parts.push(text({ x: pad, y: 88, str: title.text, size: 21, weight: 650, fill: t.text1 }));
+  parts.push(text({ x: pad, y: 84, str: title.text, size: 20, weight: 650, fill: t.text1 }));
 
-  const descLines = wrapText(proj.desc, W - pad * 2, 2, { size: 13 });
+  const descLines = wrapText(proj.desc, W - pad * 2, 2, { size: 12.5 });
   descLines.forEach((l, j) => {
-    parts.push(text({ x: pad, y: 112 + j * 19, str: l.text, size: 13, fill: t.text2 }));
+    parts.push(text({ x: pad, y: 108 + j * 18, str: l.text, size: 12.5, fill: t.text2 }));
   });
 
-  parts.push(line({ x1: pad, y1: 141, x2: W - pad, y2: 141, stroke: t.border, opacity: 0.9 }));
+  parts.push(line({ x1: pad, y1: 136, x2: W - pad, y2: 136, stroke: t.border, opacity: 0.9 }));
 
   const langColor = LANG_COLORS[proj.lang] ?? LANG_COLORS.Other;
-  parts.push(circle({ cx: pad + 4, cy: 157, r: 4.5, fill: langColor }));
-  const langLabel = fitText(proj.lang, 220, { size: 12, mono: true }).text;
-  parts.push(text({ x: pad + 16, y: 161, str: langLabel, size: 12, mono: true, fill: t.text2 }));
+  parts.push(circle({ cx: pad + 4, cy: 153, r: 4, fill: langColor }));
+  const langLabel = fitText(proj.lang, 160, { size: 11, mono: true }).text;
+  parts.push(text({ x: pad + 15, y: 157, str: langLabel, size: 11, mono: true, fill: t.text2 }));
   // npm adoption (only for packages tracked in config), next to the language
   if (proj.npm && d.npm?.package === proj.npm && Number.isFinite(d.npm.downloads)) {
-    const langW = textWidth(langLabel, { size: 12, mono: true });
+    const langW = textWidth(langLabel, { size: 11, mono: true });
     parts.push(
-      `<text x="${r2(pad + 16 + langW + 14)}" y="161" font-family="${MONO}" font-size="12" fill="${t.text3}"><tspan fill="${t.text2}">${fmtInt(d.npm.downloads)}</tspan> npm dl / mo</text>`,
+      `<text x="${r2(pad + 15 + langW + 12)}" y="157" font-family="${MONO}" font-size="11" fill="${t.text3}"><tspan fill="${t.text2}">${fmtInt(d.npm.downloads)}</tspan> dl / mo</text>`,
     );
   }
   // star count, anchored right; accent tspan keeps the glyph subtle
   parts.push(
-    `<text x="${W - pad}" y="161" font-family="${MONO}" font-size="12" fill="${t.text2}" text-anchor="end"><tspan fill="${t.accent}">\u2605</tspan> ${proj.stars}</text>`,
+    `<text x="${W - pad}" y="157" font-family="${MONO}" font-size="11" fill="${t.text2}" text-anchor="end"><tspan fill="${t.accent}">\u2605</tspan> ${proj.stars}</text>`,
   );
 
   return svgDocument({

@@ -3,7 +3,7 @@
   "identity": {
     "name": "Abel",
     "handle": "abelxiaoxing",
-    "tagline": "Building agentic systems that plan, execute and verify — from model to production.",
+    "tagline": "Building agentic systems that plan, execute and verify.",
     "status": "Building @abelxiaoxing/cadence",
     "location": "Shanghai, China"
   },
@@ -13,8 +13,8 @@
       "title": "Agentic Systems",
       "lines": [
         "Persistent agent owners",
-        "Plan approval · parallel worktrees",
-        "Self-verifying delivery loops"
+        "Plan approval · worktrees",
+        "Self-verifying delivery"
       ]
     },
     {
@@ -22,7 +22,7 @@
       "title": "Deep Learning & CV",
       "lines": [
         "PyTorch · timm · OpenCV",
-        "Detection & multi-task training",
+        "Detection & multi-task",
         "Spectral modeling — NIR · THz"
       ]
     },
@@ -31,8 +31,8 @@
       "title": "Linux & Systems",
       "lines": [
         "Arch Linux daily driver",
-        "Neovim · WezTerm · shell tooling",
-        "FastAPI · Docker · CI-ready delivery"
+        "Neovim · WezTerm · shell",
+        "FastAPI · Docker · CI-ready"
       ]
     }
   ],
@@ -62,11 +62,11 @@
   "stack": [
     {
       "group": "AI & AGENTS",
-      "items": ["LLM", "RAG", "Function Calling", "MCP", "Multi-Agent Orchestration", "Context Engineering", "vLLM"]
+      "items": ["RAG", "Function Calling", "MCP", "Multi-Agent Orchestration", "Context Engineering", "vLLM"]
     },
     {
       "group": "DEEP LEARNING & CV",
-      "items": ["PyTorch", "timm", "OpenCV", "CUDA", "Industrial Vision", "Generative Models", "Multi-GPU Training"]
+      "items": ["PyTorch", "timm", "OpenCV", "CUDA", "Industrial Vision", "Multi-GPU Training"]
     },
     {
       "group": "INFERENCE & EDGE",
