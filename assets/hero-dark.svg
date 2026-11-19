@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img">
+<title>Abel — AI systems engineer</title>
+<style>
+.pulse { animation: pulse 2.6s ease-in-out infinite; }
+.halo { animation: halo 2.6s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+@keyframes halo { 0%, 100% { opacity: 0.18; } 50% { opacity: 0.05; } }
+@media (prefers-reduced-motion: reduce) { .pulse, .halo { animation: none; } }
+</style>
+<rect x="32" y="50" width="269" height="28" rx="14" fill="#10B981" fill-opacity="0.12" stroke="#27272A" stroke-width="1" />
+<circle cx="48" cy="64" r="7" fill="#10B981" opacity="0.18" class="halo" />
+<circle cx="48" cy="64" r="3.5" fill="#10B981" class="pulse" />
+<text x="62" y="68" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="11.5" font-weight="400" fill="#A1A1AA" letter-spacing="0.4">Building @abelxiaoxing/cadence</text>
+<text x="32" y="138" font-family="'Inter','SF Pro Display',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="46" font-weight="650" fill="#FAFAFA">Abel</text>
+<text x="145.25" y="138" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="15" font-weight="400" fill="#71717A">@abelxiaoxing</text>
+<text x="32" y="174" font-family="'Inter','SF Pro Display',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="400" fill="#A1A1AA">Building agentic systems that plan, execute and verify — from model to production.</text>
+<rect x="32" y="200" width="128.8" height="26" rx="13" fill="none" stroke="#27272A" stroke-width="1" />
+<text x="96.4" y="217.5" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="11" font-weight="400" fill="#A1A1AA" letter-spacing="1" text-anchor="middle">AGENT SYSTEMS</text>
+<rect x="170.8" y="200" width="128.8" height="26" rx="13" fill="none" stroke="#27272A" stroke-width="1" />
+<text x="235.2" y="217.5" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="11" font-weight="400" fill="#A1A1AA" letter-spacing="1" text-anchor="middle">DEEP LEARNING</text>
+<rect x="309.6" y="200" width="128.8" height="26" rx="13" fill="none" stroke="#27272A" stroke-width="1" />
+<text x="374" y="217.5" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="11" font-weight="400" fill="#A1A1AA" letter-spacing="1" text-anchor="middle">LINUX SYSTEMS</text>
+<line x1="766" y1="96" x2="842" y2="66" stroke="#FAFAFA" stroke-width="1" opacity="0.18" />
+<line x1="842" y1="66" x2="902" y2="120" stroke="#FAFAFA" stroke-width="1" opacity="0.18" />
+<line x1="766" y1="96" x2="782" y2="178" stroke="#FAFAFA" stroke-width="1" opacity="0.18" />
+<line x1="782" y1="178" x2="862" y2="218" stroke="#FAFAFA" stroke-width="1" opacity="0.18" />
+<line x1="902" y1="120" x2="953.04" y2="118" stroke="#FAFAFA" stroke-width="1" stroke-dasharray="2 5" opacity="0.16" />
+<circle cx="766" cy="96" r="3" fill="none" stroke="#FAFAFA" stroke-width="1" opacity="0.3" />
+<circle cx="842" cy="66" r="3" fill="none" stroke="#FAFAFA" stroke-width="1" opacity="0.3" />
+<circle cx="902" cy="120" r="3.5" fill="#10B981" opacity="0.5" />
+<circle cx="782" cy="178" r="3" fill="none" stroke="#FAFAFA" stroke-width="1" opacity="0.3" />
+<circle cx="862" cy="218" r="3" fill="none" stroke="#FAFAFA" stroke-width="1" opacity="0.3" />
+<path d="M 1005 88 L 1056.9615242270663 118 L 1056.9615242270663 178 L 1005 208 L 953.0384757729337 178 L 953.0384757729337 118 Z" fill="none" stroke="#FAFAFA" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.22" />
+<path d="M 1005 148 L 1056.9615242270663 118 M 1005 148 L 1005 208 M 1005 148 L 953.0384757729337 118" fill="none" stroke="#FAFAFA" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.18" />
+</svg>

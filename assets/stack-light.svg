@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200" role="img">
+<title>Technology stack</title>
+<style>
+.pulse { animation: pulse 2.6s ease-in-out infinite; }
+.halo { animation: halo 2.6s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+@keyframes halo { 0%, 100% { opacity: 0.18; } 50% { opacity: 0.05; } }
+@media (prefers-reduced-motion: reduce) { .pulse, .halo { animation: none; } }
+</style>
+<rect x="0" y="0" width="1200" height="200" rx="16" fill="#FAFAFA" stroke="#E4E4E7" stroke-width="1" />
+<text x="32" y="46.5" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="10.5" font-weight="400" fill="#71717A" letter-spacing="1.2">AI &amp; AGENTS</text>
+<rect x="206" y="30" width="47.6" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="229.8" y="47" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">LLM</text>
+<rect x="261.6" y="30" width="47.6" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="285.4" y="47" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">RAG</text>
+<rect x="317.2" y="30" width="141.2" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="387.8" y="47" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">Function Calling</text>
+<rect x="466.4" y="30" width="47.6" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="490.2" y="47" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">MCP</text>
+<rect x="522" y="30" width="206" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="625" y="47" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">Multi-Agent Orchestration</text>
+<rect x="736" y="30" width="162.8" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="817.4" y="47" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">Context Engineering</text>
+<rect x="906.8" y="30" width="54.8" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="934.2" y="47" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">vLLM</text>
+<text x="32" y="84.5" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="10.5" font-weight="400" fill="#71717A" letter-spacing="1.2">DEEP LEARNING &amp; CV</text>
+<rect x="206" y="68" width="76.4" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="244.2" y="85" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">PyTorch</text>
+<rect x="290.4" y="68" width="54.8" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="317.8" y="85" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">timm</text>
+<rect x="353.2" y="68" width="69.2" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="387.8" y="85" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">OpenCV</text>
+<rect x="430.4" y="68" width="54.8" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="457.8" y="85" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">CUDA</text>
+<rect x="493.2" y="68" width="148.4" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="567.4" y="85" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">Industrial Vision</text>
+<rect x="649.6" y="68" width="148.4" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="723.8" y="85" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">Generative Models</text>
+<rect x="806" y="68" width="155.6" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="883.8" y="85" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">Multi-GPU Training</text>
+<text x="32" y="122.5" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="10.5" font-weight="400" fill="#71717A" letter-spacing="1.2">INFERENCE &amp; EDGE</text>
+<rect x="206" y="106" width="54.8" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="233.4" y="123" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">ONNX</text>
+<rect x="268.8" y="106" width="112.4" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="325" y="123" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">ONNX Runtime</text>
+<rect x="389.2" y="106" width="83.6" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="431" y="123" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">TensorRT</text>
+<rect x="480.8" y="106" width="69.2" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="515.4" y="123" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">Jetson</text>
+<rect x="558" y="106" width="105.2" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="610.6" y="123" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">PyInstaller</text>
+<text x="32" y="160.5" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="10.5" font-weight="400" fill="#71717A" letter-spacing="1.2">LINUX &amp; INFRA</text>
+<rect x="206" y="144" width="69.2" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="240.6" y="161" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">Python</text>
+<rect x="283.2" y="144" width="47.6" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="307" y="161" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">C++</text>
+<rect x="338.8" y="144" width="98" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="387.8" y="161" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">TypeScript</text>
+<rect x="444.8" y="144" width="62" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="475.8" y="161" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">Shell</text>
+<rect x="514.8" y="144" width="98" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="563.8" y="161" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">Arch Linux</text>
+<rect x="620.8" y="144" width="69.2" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="655.4" y="161" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">Neovim</text>
+<rect x="698" y="144" width="69.2" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="732.6" y="161" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">Docker</text>
+<rect x="775.2" y="144" width="76.4" height="26" rx="13" fill="none" stroke="#E4E4E7" stroke-width="1" />
+<text x="813.4" y="161" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="12" font-weight="400" fill="#52525B" text-anchor="middle">FastAPI</text>
+</svg>

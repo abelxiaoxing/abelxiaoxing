@@ -1,0 +1,102 @@
+{
+  "$comment": "Single source of truth for the GitHub profile page. Copy/wording lives here; scripts/generate_profile.mjs renders SVGs from it. `fallback` is a hand-verified snapshot used only when GitHub/npm APIs are unreachable.",
+  "identity": {
+    "name": "Abel",
+    "handle": "abelxiaoxing",
+    "tagline": "Building agentic systems that plan, execute and verify — from model to production.",
+    "status": "Building @abelxiaoxing/cadence",
+    "location": "Shanghai, China"
+  },
+  "focus": [
+    {
+      "index": "01",
+      "title": "Agentic Systems",
+      "lines": [
+        "Persistent agent owners",
+        "Plan approval · parallel worktrees",
+        "Self-verifying delivery loops"
+      ]
+    },
+    {
+      "index": "02",
+      "title": "Deep Learning & CV",
+      "lines": [
+        "PyTorch · timm · OpenCV",
+        "Detection & multi-task training",
+        "Spectral modeling — NIR · THz"
+      ]
+    },
+    {
+      "index": "03",
+      "title": "Linux & Systems",
+      "lines": [
+        "Arch Linux daily driver",
+        "Neovim · WezTerm · shell tooling",
+        "FastAPI · Docker · CI-ready delivery"
+      ]
+    }
+  ],
+  "featured": [
+    {
+      "repo": "cadence",
+      "title": "Cadence",
+      "desc": "Conversation-driven engineering workflow for Pi — approve once, a persistent owner builds, verifies and delivers.",
+      "npm": "@abelxiaoxing/cadence"
+    },
+    {
+      "repo": "PatentAgent",
+      "title": "PatentAgent",
+      "desc": "LLM patent drafting assistant — turns a core inventive idea into structured, reviewable application documents."
+    },
+    {
+      "repo": "AbelWorkflow",
+      "title": "AbelWorkflow",
+      "desc": "One-command workstation setup — installs and configures Claude Code, Codex and Pi, and deploys cadence."
+    },
+    {
+      "repo": "PyTorchMultiTaskVision",
+      "title": "PyTorchMultiTaskVision",
+      "desc": "PyTorch framework for image classification and object detection with multi-task training."
+    }
+  ],
+  "stack": [
+    {
+      "group": "AI & AGENTS",
+      "items": ["LLM", "RAG", "Function Calling", "MCP", "Multi-Agent Orchestration", "Context Engineering", "vLLM"]
+    },
+    {
+      "group": "DEEP LEARNING & CV",
+      "items": ["PyTorch", "timm", "OpenCV", "CUDA", "Industrial Vision", "Generative Models", "Multi-GPU Training"]
+    },
+    {
+      "group": "INFERENCE & EDGE",
+      "items": ["ONNX", "ONNX Runtime", "TensorRT", "Jetson", "PyInstaller"]
+    },
+    {
+      "group": "LINUX & INFRA",
+      "items": ["Python", "C++", "TypeScript", "Shell", "Arch Linux", "Neovim", "Docker", "FastAPI"]
+    }
+  ],
+  "links": {
+    "blog": "https://abelxiaoxing.github.io/",
+    "zhihu": "https://www.zhihu.com/people/luo-tuo-qing-shan-56-17",
+    "bilibili": "https://space.bilibili.com/8303485"
+  },
+  "fallback": {
+    "publicRepos": 31,
+    "totalStars": 146,
+    "reposCounted": 25,
+    "contributionsLastYear": 1059,
+    "contribRepos": 28,
+    "languages": [["Python", 12], ["JavaScript", 3], ["C++", 3], ["HTML", 2], ["Lua", 2]],
+    "memberSince": "2019-06-17",
+    "npm": { "package": "@abelxiaoxing/cadence", "downloads": 13036, "version": "2.2.0" },
+    "featuredStars": { "cadence": 4, "PatentAgent": 46, "AbelWorkflow": 9, "PyTorchMultiTaskVision": 8 },
+    "featuredLangs": {
+      "cadence": "TypeScript",
+      "PatentAgent": "Python",
+      "AbelWorkflow": "JavaScript",
+      "PyTorchMultiTaskVision": "Python"
+    }
+  }
+}
