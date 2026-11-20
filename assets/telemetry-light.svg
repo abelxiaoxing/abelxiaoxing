@@ -13,8 +13,8 @@
 <text x="28" y="134" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="9.5" font-weight="400" fill="#71717A" letter-spacing="0.6">SINCE 2019 · ★146</text>
 <line x1="164" y1="54" x2="164" y2="136" stroke="#E4E4E7" stroke-width="1" />
 <text x="190" y="70" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="10.5" font-weight="400" fill="#71717A" letter-spacing="1.2">CONTRIBUTIONS</text>
-<text x="190" y="112" font-family="'Inter','SF Pro Display',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="32" font-weight="650" fill="#09090B">1,059</text>
-<text x="190" y="134" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="9.5" font-weight="400" fill="#71717A" letter-spacing="0.6">12 MO · 28 REPOS</text>
+<text x="190" y="112" font-family="'Inter','SF Pro Display',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="32" font-weight="650" fill="#09090B">1,116</text>
+<text x="190" y="134" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="9.5" font-weight="400" fill="#71717A" letter-spacing="0.6">12 MO · 12 REPOS</text>
 <line x1="322" y1="54" x2="322" y2="136" stroke="#E4E4E7" stroke-width="1" />
 <text x="348" y="70" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="10.5" font-weight="400" fill="#71717A" letter-spacing="1.2">LANGUAGES · 26 NON-FORK REPOS</text>
 <defs><clipPath id="langbar-light"><rect x="348" y="90" width="250" height="8" rx="4" /></clipPath></defs>
@@ -39,8 +39,8 @@
 <text x="492" y="160" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="10" font-weight="400" fill="#52525B">OTHER 11%</text>
 <line x1="622" y1="54" x2="622" y2="136" stroke="#E4E4E7" stroke-width="1" />
 <text x="648" y="70" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="10.5" font-weight="400" fill="#71717A" letter-spacing="1.2">PACKAGE MOMENTUM</text>
-<text x="648" y="112" font-family="'Inter','SF Pro Display',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="22" font-weight="650" fill="#09090B">13,036</text>
+<text x="648" y="112" font-family="'Inter','SF Pro Display',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="22" font-weight="650" fill="#09090B">14,233</text>
 <text x="731.38" y="112" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="9" font-weight="400" fill="#71717A">NPM DL / MO</text>
 <text x="648" y="134" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="9.5" font-weight="400" fill="#71717A">@abelxiaoxing/cadence</text>
-<text x="648" y="154" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="9.5" font-weight="400" fill="#71717A">SYNCED 2026-11-19 · v2.2.0</text>
+<text x="648" y="154" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="9.5" font-weight="400" fill="#71717A">SYNCED 2026-11-20 · v2.2.6</text>
 </svg>
