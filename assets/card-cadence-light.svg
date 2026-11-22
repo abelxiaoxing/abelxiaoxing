@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="415" height="164" viewBox="0 0 415 164" role="img">
-<title>Cadence — 4 stars · 14,650 npm downloads / month</title>
+<title>Cadence — 4 stars · 15,250 npm downloads / month</title>
 <style>
 .pulse { animation: pulse 2.6s ease-in-out infinite; }
 .halo { animation: halo 2.6s ease-in-out infinite; }
@@ -16,6 +16,6 @@
 <line x1="22" y1="136" x2="393" y2="136" stroke="#E4E4E7" stroke-width="1" opacity="0.9" />
 <circle cx="26" cy="153" r="4" fill="#3178c6" />
 <text x="37" y="157" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="11" font-weight="400" fill="#52525B">TypeScript</text>
-<text x="115" y="157" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="11" fill="#71717A"><tspan fill="#52525B">14,650</tspan> dl / mo</text>
+<text x="115" y="157" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="11" fill="#71717A"><tspan fill="#52525B">15,250</tspan> dl / mo</text>
 <text x="393" y="157" font-family="'JetBrains Mono','SF Mono',ui-monospace,'Cascadia Mono','Source Code Pro',Menlo,Consolas,monospace" font-size="11" fill="#52525B" text-anchor="end"><tspan fill="#059669">★</tspan> 4</text>
 </svg>
